@@ -30,8 +30,8 @@
 
   /* — Text — */
   --text: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.72);
-  --text-muted: rgba(255, 255, 255, 0.42);
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.60);
 
   /* — Accent Colors — */
   --wa-green: #25d366;

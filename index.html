@@ -34,10 +34,11 @@
   <meta name="twitter:title" content="Sol Audio Car — Audio, Polarizados y Diagnóstico Premium en Rosario">
   <meta name="twitter:description" content="Centro Tecnológico Automotor en Rosario. Garantía escrita en cada servicio.">
 
-  <!-- Fonts -->
+  <!-- Fonts: Asynchronous Load para Performance 100 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap"></noscript>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Styles -->
@@ -168,7 +169,7 @@
 
         <!-- 1. Polarizados / Seguridad -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Polarizados%20/%20Seguridad" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/seguridad.png" alt="Polarizados y seguridad vehicular en Rosario — Sol Audio Car" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/seguridad.webp" decoding="async" alt="Polarizados y seguridad vehicular en Rosario — Sol Audio Car" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">shield</span></div>
@@ -179,7 +180,7 @@
 
         <!-- 2. Cámaras / Monitoreo -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Cámaras%20/%20Monitoreo" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/camaras.png" alt="Cámaras de reversa y sensores de estacionamiento — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/camaras.webp" decoding="async" alt="Cámaras de reversa y sensores de estacionamiento — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">videocam</span></div>
@@ -190,7 +191,7 @@
 
         <!-- 3. Audio y Multimedia -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Audio%20y%20Multimedia" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/audio.png" alt="Instalación de audio car y pantallas multimedia en Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/audio.webp" decoding="async" alt="Instalación de audio car y pantallas multimedia en Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">graphic_eq</span></div>
@@ -201,7 +202,7 @@
 
         <!-- 4. Iluminación y Estética -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Iluminación%20y%20Estética" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/iluminacion.png" alt="Iluminación LED y ambient lighting automotor en Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/iluminacion.webp" decoding="async" alt="Iluminación LED y ambient lighting automotor en Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">lightbulb</span></div>
@@ -212,7 +213,7 @@
 
         <!-- 5. Estética Interior -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Estética%20Interior" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/estetica-interior.png" alt="Estética interior automotriz premium — Sol Audio Car" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/estetica-interior.webp" decoding="async" alt="Estética interior automotriz premium — Sol Audio Car" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">auto_awesome</span></div>
@@ -223,7 +224,7 @@
 
         <!-- 6. Energía y Conectividad -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Energía%20y%20Conectividad" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/energia.png" alt="Cargadores USB y conectividad vehicular — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/energia.webp" decoding="async" alt="Cargadores USB y conectividad vehicular — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">bolt</span></div>
@@ -234,7 +235,7 @@
 
         <!-- 7. Diagnóstico Eléctrico -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Diagnóstico%20Eléctrico" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/diagnostico-electrico.png" alt="Diagnóstico eléctrico automotor en Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/diagnostico-electrico.webp" decoding="async" alt="Diagnóstico eléctrico automotor en Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">electrical_services</span></div>
@@ -245,7 +246,7 @@
 
         <!-- 8. Aire Acondicionado -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Aire%20Acondicionado" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/aire-acondicionado.png" alt="Carga de aire acondicionado automotor en Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/aire-acondicionado.webp" decoding="async" alt="Carga de aire acondicionado automotor en Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">ac_unit</span></div>
@@ -256,7 +257,7 @@
 
         <!-- 9. Confort Premium -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Confort%20Premium" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/confort.png" alt="Insonorización y confort premium automotor — Sol Audio Car" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/confort.webp" decoding="async" alt="Insonorización y confort premium automotor — Sol Audio Car" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">weekend</span></div>
@@ -293,7 +294,7 @@
 
         <!-- D1. Diagnóstico Electrónico -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Diagnóstico%20Electrónico" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/diagnostico-electronico.png" alt="Diagnóstico electrónico OBD2 multimarca — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/diagnostico-electronico.webp" decoding="async" alt="Diagnóstico electrónico OBD2 multimarca — Sol Audio Car Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">memory</span></div>
@@ -304,7 +305,7 @@
 
         <!-- D2. Codificación / Programación -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Codificación%20/%20Programación" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/codificacion.png" alt="Codificación y programación de módulos automotrices" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/codificacion.webp" decoding="async" alt="Codificación y programación de módulos automotrices" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">code</span></div>
@@ -315,7 +316,7 @@
 
         <!-- D3. Llaves y Seguridad -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Llaves%20y%20Seguridad" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/llaves.png" alt="Programación de llaves con chip transponder" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/llaves.webp" decoding="async" alt="Programación de llaves con chip transponder" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">vpn_key</span></div>
@@ -326,7 +327,7 @@
 
         <!-- D4. Reseteos -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Reseteos" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/reseteos.png" alt="Reseteo de service y módulos automotrices" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/reseteos.webp" decoding="async" alt="Reseteo de service y módulos automotrices" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">restart_alt</span></div>
@@ -337,7 +338,7 @@
 
         <!-- D5. Pre-compra Automotor -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Pre-compra%20Automotor" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/precompra.png" alt="Diagnóstico pre-compra automotor en Rosario" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/precompra.webp" decoding="async" alt="Diagnóstico pre-compra automotor en Rosario" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">fact_check</span></div>
@@ -348,7 +349,7 @@
 
         <!-- D6. Fallas Complejas -->
         <a href="https://wa.me/543416563602?text=Hola!%20Quiero%20consultar%20por%20Fallas%20Complejas" target="_blank" rel="noopener" class="card reveal">
-          <div class="card__img"><img src="assets/img/fallas-complejas.png" alt="Resolución de fallas complejas automotrices" loading="lazy" width="600" height="375"></div>
+          <div class="card__img"><img src="assets/img/fallas-complejas.webp" decoding="async" alt="Resolución de fallas complejas automotrices" loading="lazy" width="600" height="375"></div>
           <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M19 5H8M19 5v11"/></svg></div>
           <div class="card__body">
             <div class="card__icon"><span class="mi">build_circle</span></div>
@@ -376,7 +377,7 @@
 
         <!-- Combo 1: Seguridad Total -->
         <article class="combo reveal">
-          <div class="combo__img"><img src="assets/img/combo-seguridad.png" alt="Combo Seguridad — Alarma, GPS y sensores de proximidad" loading="lazy" width="600" height="338"></div>
+          <div class="combo__img"><img src="assets/img/combo-seguridad.webp" decoding="async" alt="Combo Seguridad — Alarma, GPS y sensores de proximidad" loading="lazy" width="600" height="338"></div>
           <div class="combo__body">
             <h3 class="combo__name">Seguridad</h3>
             <p class="combo__items">Alarma + GPS + Sensores de proximidad</p>
@@ -387,7 +388,7 @@
 
         <!-- Combo 2: Tecnología -->
         <article class="combo reveal">
-          <div class="combo__img"><img src="assets/img/combo-tecnologia.png" alt="Combo Tecnología — Pantalla multimedia, cámara e interfaz de volante" loading="lazy" width="600" height="338"></div>
+          <div class="combo__img"><img src="assets/img/combo-tecnologia.webp" decoding="async" alt="Combo Tecnología — Pantalla multimedia, cámara e interfaz de volante" loading="lazy" width="600" height="338"></div>
           <div class="combo__body">
             <h3 class="combo__name">Tecnología</h3>
             <p class="combo__items">Pantalla + Cámara + Interfaz volante</p>
@@ -398,7 +399,7 @@
 
         <!-- Combo 3: Confort -->
         <article class="combo reveal">
-          <div class="combo__img"><img src="assets/img/combo-confort.png" alt="Combo Confort — Aire acondicionado y polarizado premium" loading="lazy" width="600" height="338"></div>
+          <div class="combo__img"><img src="assets/img/combo-confort.webp" decoding="async" alt="Combo Confort — Aire acondicionado y polarizado premium" loading="lazy" width="600" height="338"></div>
           <div class="combo__body">
             <h3 class="combo__name">Confort</h3>
             <p class="combo__items">A/C + Polarizado Premium</p>
@@ -409,7 +410,7 @@
 
         <!-- Combo 4: Premium -->
         <article class="combo reveal">
-          <div class="combo__img"><img src="assets/img/combo-premium.png" alt="Combo Estética — Ambient lighting y Asientos premium" loading="lazy" width="600" height="338"></div>
+          <div class="combo__img"><img src="assets/img/combo-premium.webp" decoding="async" alt="Combo Estética — Ambient lighting y Asientos premium" loading="lazy" width="600" height="338"></div>
           <div class="combo__body">
             <h3 class="combo__name">Estética</h3>
             <p class="combo__items">Ambient Lighting + Asientos premium</p>
