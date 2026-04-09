@@ -156,18 +156,27 @@
   });
 
   /* ------------------------------------------------------------------
-     5. PARALLAX — Hero subtle movement
+     5. PARALLAX — Hero subtle movement (desktop only, rAF-throttled)
   ------------------------------------------------------------------ */
   const heroContent = document.querySelector(".hero__content");
 
-  if (heroContent) {
+  if (heroContent && window.matchMedia("(min-width: 769px)").matches) {
+    let parallaxTicking = false;
+
     window.addEventListener(
       "scroll",
       function () {
-        var y = window.scrollY;
-        if (y < window.innerHeight) {
-          heroContent.style.transform = "translateY(" + y * 0.15 + "px)";
-          heroContent.style.opacity = 1 - y / (window.innerHeight * 0.8);
+        if (!parallaxTicking) {
+          requestAnimationFrame(function () {
+            var y = window.scrollY;
+            if (y < window.innerHeight) {
+              heroContent.style.transform =
+                "translate3d(0," + y * 0.15 + "px,0)";
+              heroContent.style.opacity = 1 - y / (window.innerHeight * 0.8);
+            }
+            parallaxTicking = false;
+          });
+          parallaxTicking = true;
         }
       },
       { passive: true },

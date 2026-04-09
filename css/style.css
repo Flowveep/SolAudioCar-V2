@@ -3,8 +3,9 @@
    Netlify Build — Mobile-First, Serif + Sans-Serif
    ============================================================ */
 
-/* === GOOGLE FONTS === */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+/* === GOOGLE FONTS ===
+   Loaded asynchronously via <link rel="preload"> in index.html.
+   DO NOT use @import here — it is render-blocking and duplicates the load. */
 
 /* === CSS CUSTOM PROPERTIES === */
 :root {
@@ -1543,3 +1544,19 @@ body::after {
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga";
 }
+
+/* ============================================================
+   PERFORMANCE — Mobile grain disable & paint containment
+   ============================================================ */
+@media (max-width: 768px) {
+  body::after {
+    display: none;
+  }
+}
+
+.section,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
