@@ -928,6 +928,28 @@ body::after {
   fill: currentColor;
 }
 
+/* Mobile compaction for service cards */
+@media (max-width: 639px) {
+  .services-grid { gap: 10px; }
+  .card__img { aspect-ratio: 16 / 8; }
+  .card__body { padding: 12px 14px 14px; }
+  .card__icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .card__title {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .card__desc {
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+}
+
 /* ============================================================
    DIAGNOSTICS
    ============================================================ */
@@ -1101,27 +1123,44 @@ body::after {
    TRUST PILLARS
    ============================================================ */
 .trust-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 0 var(--gutter);
-  max-width: var(--max-w);
+  display: flex;
+  gap: 14px;
+  padding: 4px var(--gutter) 18px;
+  max-width: 100%;
   margin: 0 auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: var(--gutter);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.trust-grid::-webkit-scrollbar { display: none; }
 
 @media (min-width: 768px) {
   .trust-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 var(--gutter);
+    max-width: var(--max-w);
+    overflow: visible;
+    scroll-snap-type: none;
   }
 }
 
 .trust {
+  flex: 0 0 82%;
+  scroll-snap-align: start;
   text-align: center;
-  padding: 36px 22px;
+  padding: 28px 20px;
   border-radius: var(--radius-lg);
   background: var(--card);
   border: 1px solid var(--border);
   transition: all var(--t-med);
+}
+
+@media (min-width: 768px) {
+  .trust { flex: initial; padding: 36px 22px; }
 }
 
 .trust:hover {
@@ -1368,6 +1407,53 @@ body::after {
   height: 100%;
   border: none;
   filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(1.1);
+}
+
+/* Mobile 2-column layout for contact section */
+@media (max-width: 767px) {
+  .contact__cta-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .contact__cta-actions .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  .contact__info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .contact__info-grid .info-card:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+  .info-card {
+    padding: 10px 12px;
+    gap: 10px;
+    min-width: 0;
+  }
+  .info-card > div { min-width: 0; flex: 1; }
+  .info-card__icon { width: 34px; height: 34px; flex-shrink: 0; }
+  .info-card__label { font-size: 0.62rem; }
+  .info-card__value {
+    font-size: 0.78rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .contact__info-grid .info-card:nth-child(3) .info-card__value {
+    white-space: normal;
+  }
+  .map-wrap { height: 180px; }
+}
+
+@media (max-width: 399px) {
+  .contact__cta-actions { grid-template-columns: 1fr; }
+  .contact__info-grid { grid-template-columns: 1fr; }
+  .contact__info-grid .info-card:nth-child(3) { grid-column: auto; }
 }
 
 /* ============================================================
